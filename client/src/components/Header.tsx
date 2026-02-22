@@ -18,8 +18,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary flex items-center justify-center">
-              <span className="text-white font-serif font-bold text-sm sm:text-base">⌘</span>
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary flex items-center justify-center" style={{borderRadius: '100px'}}>
+              <span className="text-white font-serif font-bold text-sm sm:text-base" style={{fontSize: '30px', fontWeight: '900'}}>⌘</span>
             </div>
             <span className="font-serif font-semibold text-sm sm:text-base text-foreground hidden sm:inline">
               Conheça Seu Mac
