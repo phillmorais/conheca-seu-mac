@@ -1,25 +1,60 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import ProductsSection from "@/components/ProductsSection";
+import SocialSection from "@/components/SocialSection";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+  const handleLearnMore = () => {
+    const productsSection = document.getElementById("products");
+    if (productsSection) {
+      const headerHeight = 80;
+      const elementPosition = productsSection.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scrollTo({ top: elementPosition, behavior: "smooth" });
+    }
+  };
+
+  const handleWhatsApp = () => {
+    // Replace with actual WhatsApp number
+    window.open("https://wa.me/5511999999999", "_blank");
+  };
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
+    <div className="w-full min-h-screen bg-white">
+      {/* Header */}
+      <Header />
+
+      {/* Hero Section */}
+      <div className="pt-16 sm:pt-20">
+        <HeroSection onLearnMore={handleLearnMore} onWhatsApp={handleWhatsApp} />
+      </div>
+
+      {/* About Section */}
+      <div id="about">
+        <AboutSection />
+      </div>
+
+      {/* Testimonials Section */}
+      <div id="testimonials">
+        <TestimonialsSection />
+      </div>
+
+      {/* Products Section */}
+      <div id="products">
+        <ProductsSection />
+      </div>
+
+      {/* Social Section */}
+      <SocialSection />
+
+      {/* CTA Section */}
+      <CTASection onWhatsApp={handleWhatsApp} />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
