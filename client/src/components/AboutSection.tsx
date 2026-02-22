@@ -6,7 +6,7 @@ export default function AboutSection() {
           {/* Section Title */}
           <div className="text-center mb-16 sm:mb-20">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-foreground mb-6">
-              O Conheça Seu Mac
+              Conheça Seu Mac
             </h2>
             <div className="w-16 h-1 bg-primary mx-auto"></div>
           </div>

@@ -20,7 +20,7 @@ const products: Product[] = [
   {
     id: 2,
     title: "Além do Command",
-    description: "Livro completo sobre uso avançado do Mac. Desbloqueie todo o potencial do seu dispositivo.",
+    description: "Livro completo sobre o teclado do Mac. Desbloqueie todo o potencial do seu dispositivo.",
     icon: "📖",
     href: "/livro-alem-do-command",
   },

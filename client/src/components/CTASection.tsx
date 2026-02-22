@@ -36,7 +36,7 @@ export default function CTASection({ onWhatsApp }: CTASectionProps) {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
               <div>
-                <p className="text-2xl font-bold mb-2">10+</p>
+                <p className="text-2xl font-bold mb-2">14+</p>
                 <p className="text-white/90">Anos de experiência</p>
               </div>
               <div>

@@ -32,7 +32,7 @@ export default function HeroSection({ onLearnMore, onWhatsApp }: HeroSectionProp
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl text-muted leading-relaxed max-w-xl mx-auto">
-            Suporte, ensino e orientação para quem quer usar o Mac com clareza e tranquilidade.
+            Ensino, suporte e orientação para quem quer usar o Mac com clareza e tranquilidade.
           </p>
 
           {/* CTA Buttons */}
