@@ -18,8 +18,7 @@ export default function Home() {
   };
 
   const handleWhatsApp = () => {
-    // Replace with actual WhatsApp number
-    window.open("https://wa.me/5511999999999", "_blank");
+    window.open("https://wa.me/5531988598031", "_blank");
   };
 
   return (
