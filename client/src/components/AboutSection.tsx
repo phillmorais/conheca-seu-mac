@@ -18,14 +18,7 @@ export default function AboutSection() {
                   alt="Felipe Morais - Especialista em Apple"
                   className="relative z-10 w-full max-w-sm h-auto rounded-2xl shadow-2xl object-cover"
                 />
-                {/* Floating badge */}
-                <div className="absolute -bottom-4 -right-4 z-20 bg-white rounded-2xl shadow-xl px-5 py-3 flex items-center gap-3 border border-border">
-                  <span className="text-2xl">🏆</span>
-                  <div>
-                    <p className="text-xs text-muted font-medium">Certificado</p>
-                    <p className="text-sm font-bold text-foreground">Apple Expert</p>
-                  </div>
-                </div>
+
               </div>
             </div>
 
