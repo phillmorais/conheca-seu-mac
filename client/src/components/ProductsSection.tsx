@@ -25,7 +25,8 @@ const products = [
     id: 3,
     title: "Felipinho",
     description: "Assistente de IA que responde suas dúvidas sobre Apple no WhatsApp. Suporte 24/7 sempre disponível.",
-    icon: "🤖",
+    icon: "image",
+    iconSrc: "https://d2xsxph8kpxj0f.cloudfront.net/310519663065717416/TQxajKgkupW6haYUxMLwHv/felipinho-icon_3dabd1c2.png",
     href: "https://www.conhecaseumac.com.br/felipinho",
     badge: "IA",
     badgeColor: "bg-green-100 text-green-700",
@@ -60,7 +61,11 @@ export default function ProductsSection() {
             >
               {/* Icon Area */}
               <div className="h-44 bg-gradient-to-br from-gray-50 to-gray-100 flex flex-col items-center justify-center gap-3 group-hover:from-white group-hover:to-gray-50 transition-all duration-300">
-                <span className="text-6xl drop-shadow-sm group-hover:scale-110 transition-transform duration-300 inline-block">{product.icon}</span>
+                {product.icon === "image" ? (
+                  <img src={product.iconSrc} alt={product.title} className="w-32 h-32 object-contain drop-shadow-sm group-hover:scale-110 transition-transform duration-300" />
+                ) : (
+                  <span className="text-6xl drop-shadow-sm group-hover:scale-110 transition-transform duration-300 inline-block">{product.icon}</span>
+                )}
                 <span className={`text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full ${product.badgeColor}`}>
                   {product.badge}
                 </span>
