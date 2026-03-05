@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import ProductsSection from "@/components/ProductsSection";
+import PersonalizedServiceSection from "@/components/PersonalizedServiceSection";
 import SocialSection from "@/components/SocialSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -44,6 +45,11 @@ export default function Home() {
       {/* Products Section */}
       <div id="products">
         <ProductsSection />
+      </div>
+
+      {/* Personalized Service Section */}
+      <div id="atendimentos">
+        <PersonalizedServiceSection />
       </div>
 
       {/* Social Section */}

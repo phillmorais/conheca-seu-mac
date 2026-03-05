@@ -25,6 +25,7 @@ export default function Header() {
     { label: "Sobre", id: "about" },
     { label: "Depoimentos", id: "testimonials" },
     { label: "Produtos", id: "products" },
+    { label: "Atendimentos", id: "atendimentos" },
   ];
 
   return (

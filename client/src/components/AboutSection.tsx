@@ -8,15 +8,15 @@ export default function AboutSection() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
             {/* Image - Left */}
-            <div className="flex justify-center lg:justify-start order-2 lg:order-1">
-              <div className="relative">
+            <div className="flex justify-center lg:justify-start order-2 lg:order-1 w-full">
+              <div className="relative w-full max-w-xs sm:max-w-sm">
                 {/* Decorative background shape */}
                 <div className="absolute -inset-4 bg-primary/8 rounded-3xl -rotate-2"></div>
                 <div className="absolute -inset-4 bg-primary/4 rounded-3xl rotate-1"></div>
                 <img
                   src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663065717416/LbjuaMqUyllLUnqZ.jpg"
                   alt="Felipe Morais - Especialista em Apple"
-                  className="relative z-10 w-full max-w-sm h-auto rounded-2xl shadow-2xl object-cover"
+                  className="relative z-10 w-full h-auto rounded-2xl shadow-2xl object-cover"
                 />
 
               </div>
