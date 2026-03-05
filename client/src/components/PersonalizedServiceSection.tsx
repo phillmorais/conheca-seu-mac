@@ -165,13 +165,6 @@ export default function PersonalizedServiceSection() {
                 Agendar Sessão
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              
-              <a
-                href="#produtos"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary/5 transition-all duration-200"
-              >
-                Ver Outros Serviços
-              </a>
             </div>
           </div>
         </div>
