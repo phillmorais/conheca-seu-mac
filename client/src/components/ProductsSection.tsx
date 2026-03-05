@@ -26,7 +26,7 @@ const products = [
     title: "Felipinho",
     description: "Assistente de IA que responde suas dúvidas sobre Apple no WhatsApp. Suporte 24/7 sempre disponível.",
     icon: "image",
-    iconSrc: "https://d2xsxph8kpxj0f.cloudfront.net/310519663065717416/TQxajKgkupW6haYUxMLwHv/felipinho-icon_3dabd1c2.png",
+    iconSrc: "https://d2xsxph8kpxj0f.cloudfront.net/310519663065717416/TQxajKgkupW6haYUxMLwHv/felipinho-edited_d27800f2.png",
     href: "https://www.conhecaseumac.com.br/felipinho",
     badge: "IA",
     badgeColor: "bg-green-100 text-green-700",
