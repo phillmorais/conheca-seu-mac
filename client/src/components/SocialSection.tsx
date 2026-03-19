@@ -25,6 +25,19 @@ const socialLinks = [
     color: "text-pink-600",
     bg: "bg-pink-50 hover:bg-pink-100 border-pink-200 hover:border-pink-400",
   },
+  {
+    name: "TikTok",
+    handle: "@conhecaseumac",
+    description: "Vídeos curtos e virais com dicas sobre Mac",
+    href: "https://www.tiktok.com/@conhecaseumac",
+    icon: (
+      <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.498 3.75c1.382 0 2.5-1.118 2.5-2.5s-1.118-2.5-2.5-2.5-2.5 1.118-2.5 2.5 1.118 2.5 2.5 2.5zM12 7.5c-2.485 0-4.5 2.015-4.5 4.5s2.015 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.015-4.5-4.5-4.5zm0 8c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5zM7 2h2v12H7V2zm9 0h2v12h-2V2z"/>
+      </svg>
+    ),
+    color: "text-black",
+    bg: "bg-gray-100 hover:bg-gray-200 border-gray-300 hover:border-gray-500",
+  },
 ];
 
 export default function SocialSection() {
@@ -46,7 +59,7 @@ export default function SocialSection() {
           </div>
 
           {/* Social Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {socialLinks.map((link, index) => (
               <a
                 key={link.name}
