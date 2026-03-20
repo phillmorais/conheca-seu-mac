@@ -1,0 +1,34 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "slug": "seguranca-privacidade-mac",
+      "title": "Seu Mac está seguro? As 2 configurações que você não pode ignorar",
+      "excerpt": "Aprenda as 2 configurações essenciais de segurança que todo usuário Mac deveria fazer para proteger seus dados pessoais.",
+      "category": "Segurança",
+      "date": "20 de março de 2026",
+      "readTime": "5 min",
+      "content": "<h2>Por que segurança importa</h2><p>Seu Mac contém informações sensíveis: emails, documentos financeiros, fotos pessoais, histórico de navegação. Se alguém conseguir acesso físico ao seu computador sem proteção, terá acesso a tudo isso em segundos. A boa notícia? Proteger seu Mac é simples e leva apenas alguns minutos.</p><h3>1. Senha Forte na Conta do Mac</h3><p>A primeira linha de defesa é uma senha forte. Muitas pessoas usam senhas fracas por serem fáceis de lembrar, mas isso é exatamente o que as torna perigosas.</p><p><strong>O que NÃO fazer:</strong></p><ul><li>Usar datas de nascimento (12/05/1990)</li><li>Usar nomes simples (João, Maria, Felipinho)</li><li>Usar sequências óbvias (123456, abcdef)</li><li>Usar a mesma senha de outros serviços</li></ul><p><strong>O que FAZER:</strong></p><ul><li>Combinar letras maiúsculas e minúsculas</li><li>Adicionar números e símbolos especiais</li><li>Criar algo único e aleatório</li><li>Usar um gerenciador de senhas como 1Password ou Bitwarden</li></ul><p><strong>Como configurar:</strong></p><ol><li>Abra Ajustes do Sistema</li><li>Vá para ID Apple (ou Usuários e Grupos em versões antigas)</li><li>Clique em 'Senha' ou 'Alterar Senha'</li><li>Digite uma senha forte seguindo as dicas acima</li></ol><h3>2. Senha Exigida ao Sair do Repouso</h3><p>Imagine que você deixa seu Mac aberto na mesa do café e sai por 5 minutos. Se alguém chegar perto, consegue acessar tudo. A solução? Exigir senha quando o Mac volta do repouso.</p><p><strong>Como configurar:</strong></p><ol><li>Abra Ajustes do Sistema</li><li>Vá para 'Protetor de Tela'</li><li>Marque a opção 'Exigir senha ao acordar'</li><li>Escolha um tempo curto (recomendamos 'imediatamente')</li></ol>"
+    },
+    {
+      "id": "2",
+      "slug": "performance-velocidade-mac",
+      "title": "Por que meu Mac está tão lento? (E como consertar)",
+      "excerpt": "Descubra por que seu Mac está lento e como otimizar a performance com 2 ajustes simples que fazem toda a diferença.",
+      "category": "Performance",
+      "date": "20 de março de 2026",
+      "readTime": "6 min",
+      "content": "<h2>Causa 1: Itens de Login Desnecessários</h2><p>Quando você liga seu Mac, várias aplicações abrem automaticamente em background. Cada uma consome memória e processamento, deixando seu Mac mais lento.</p><p><strong>Como verificar quais apps estão abrindo:</strong></p><ol><li>Abra Ajustes do Sistema</li><li>Vá para 'Geral' → 'Itens de Login'</li><li>Você verá uma lista de apps que abrem automaticamente</li></ol><p><strong>Impacto:</strong> Remover 5-10 apps desnecessários pode fazer seu Mac iniciar 30-50% mais rápido.</p><h2>Causa 2: Armazenamento Cheio</h2><p>Um disco cheio é um Mac lento. Quando o armazenamento está perto do limite, o sistema operacional não consegue criar arquivos temporários, fazer cache eficiente ou gerenciar memória virtual adequadamente.</p><p><strong>Quanto espaço você deveria manter livre?</strong></p><ul><li>Mínimo: 10% do tamanho total do disco</li><li>Recomendado: 20% do tamanho total do disco</li><li>Ideal: 25-30% do tamanho total do disco</li></ul><p><strong>Como liberar espaço:</strong></p><ul><li>Exclua aplicações antigas que não usa mais</li><li>Limpe a pasta Downloads</li><li>Use iCloud Photos para mover fotos para a nuvem</li><li>Considere um disco externo para arquivos antigos</li></ul>"
+    },
+    {
+      "id": "3",
+      "slug": "backup-protecao-dados-mac",
+      "title": "Seu Mac vai falhar um dia. Está pronto?",
+      "excerpt": "Aprenda por que backup é crítico e como configurar Time Machine para proteger seus arquivos automaticamente.",
+      "category": "Backup",
+      "date": "20 de março de 2026",
+      "readTime": "7 min",
+      "content": "<h2>Por que backup é crítico</h2><p>Imagine perder todos os seus arquivos: fotos de família, documentos de trabalho, projetos pessoais, emails importantes. Sem backup, eles desaparecem para sempre. Com backup, você recupera tudo em minutos.</p><p><strong>Cenários onde você precisará de backup:</strong></p><ul><li>Falha de disco rígido (acontece com ~2-5% dos discos por ano)</li><li>Exclusão acidental de arquivos importantes</li><li>Ataque de ransomware</li><li>Derramamento de café no Mac</li><li>Roubo ou perda do computador</li><li>Corrupção de dados</li></ul><h2>Time Machine: O Backup Automático do Mac</h2><p>Time Machine é a solução de backup nativa do macOS. É simples, automático e extremamente poderoso.</p><p><strong>Como funciona:</strong></p><ul><li>Faz backup automático a cada hora</li><li>Armazena versões de todos os seus arquivos</li><li>Permite restaurar arquivos de qualquer data</li><li>Funciona silenciosamente em background</li></ul><p><strong>O que você precisa:</strong></p><ul><li>Um disco externo (HD ou SSD)</li><li>Pelo menos 2x o tamanho do seu Mac</li><li>Conexão USB 3.0 ou Thunderbolt para velocidade</li></ul>"
+    }
+  ]
+}

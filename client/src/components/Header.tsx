@@ -1,6 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
+interface NavItem {
+  label: string;
+  id?: string;
+  href?: string;
+}
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,11 +27,12 @@ export default function Header() {
     }
   };
 
-  const navItems = [
+  const navItems: NavItem[] = [
     { label: "Sobre", id: "about" },
     { label: "Depoimentos", id: "testimonials" },
     { label: "Produtos", id: "products" },
     { label: "Atendimentos", id: "atendimentos" },
+    { label: "Blog", href: "/blog" },
   ];
 
   return (
@@ -57,13 +64,23 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="px-4 py-2 text-foreground/70 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 text-sm font-medium"
-              >
-                {item.label}
-              </button>
+              item.href ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="px-4 py-2 text-foreground/70 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 text-sm font-medium"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id || "")}
+                  className="px-4 py-2 text-foreground/70 hover:text-primary hover:bg-primary/5 rounded-lg transition-all duration-200 text-sm font-medium"
+                >
+                  {item.label}
+                </button>
+              )
             ))}
             <a
               href="https://wa.me/5531988598031"
@@ -89,13 +106,23 @@ export default function Header() {
         {isMenuOpen && (
           <nav className="md:hidden pb-5 pt-2 border-t border-border mt-1 space-y-1 animate-fade-in-up">
             {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="block w-full text-left px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 font-medium"
-              >
-                {item.label}
-              </button>
+              item.href ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  className="block w-full text-left px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 font-medium"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id || "")}
+                  className="block w-full text-left px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 rounded-xl transition-all duration-200 font-medium"
+                >
+                  {item.label}
+                </button>
+              )
             ))}
             <a
               href="https://wa.me/5531988598031"
